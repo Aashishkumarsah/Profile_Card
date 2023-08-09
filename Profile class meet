@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="box-wrapper">
+            <div class="img">
+                <img id="profile" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUiqQU3nLJHzrDoJ8fB5dmDBSdfETMEpNNoUZEUEbY9plCw4Me4reCTPtQlNvKVb04ntJgWNbyPdk86MqE3nW5K5xG7WaXmCsoGnkghMMY2qiW343vDyrtUzOAy6gWVCQIdwOhfOtcTdf8R6eM1FiONKeES9PUhaPcNN8kkm5RGIKN/s220/received_839540567078793.jpeg" alt="profile"/>
+            </div>
+            <div class="desc">
+                <h2>Aashish Shah</h2>
+                 <p>Founder | Ramrati's Blog</p>
+            </div>
+            <div class="buttons">
+                <button onclick="openModal()"><i class="fa-solid fa-share"></i>Share Profile</button>
+                <button>Follow Me</button>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <div class="boxmodal">
+            <div  class="header">
+                <h3>Share My Profile</h3>
+                <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+            </div>
+            <hr>
+            <p>share this via</p>
+            <div class="socialshare">
+                <a href="">
+                    <i class="fa-brands fa-facebook" style="color: blue;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter" style="color: skyblue;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram" style="color: orangered;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-whatsapp" style="color: greenyellow;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-telegram" style="color: aqua;"></i>
+                </a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <script src="./index.js" type="text/javascript"></script>
+</body>
+</html>
